@@ -21,7 +21,7 @@ gulp.task('default', gulp.series('clean', 'build'));
 gulp.task('watch', watch);
 
 function deployGH() {
-  return gulp.src('./dist/**/*')
+  return gulp.src('dist/**/*')
     .pipe(ghPages());
 }
 
